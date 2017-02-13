@@ -8,16 +8,127 @@
 
 /* Begin PBXBuildFile section */
 		19CD9A8C1E51A2D200EA7C0D /* ChessEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9A8A1E51A2D200EA7C0D /* ChessEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19CD9AD11E51A46B00EA7C0D /* CommandQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AA11E51A46B00EA7C0D /* CommandQueue.h */; };
+		19CD9AD21E51A46B00EA7C0D /* CommandQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AA21E51A46B00EA7C0D /* CommandQueue.mm */; };
+		19CD9AD31E51A46B00EA7C0D /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AA41E51A46B00EA7C0D /* benchmark.cpp */; };
+		19CD9AD41E51A46B00EA7C0D /* bitbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AA51E51A46B00EA7C0D /* bitbase.cpp */; };
+		19CD9AD51E51A46B00EA7C0D /* bitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AA61E51A46B00EA7C0D /* bitboard.cpp */; };
+		19CD9AD61E51A46B00EA7C0D /* bitboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AA71E51A46B00EA7C0D /* bitboard.h */; };
+		19CD9AD71E51A46B00EA7C0D /* endgame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AA81E51A46B00EA7C0D /* endgame.cpp */; };
+		19CD9AD81E51A46B00EA7C0D /* endgame.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AA91E51A46B00EA7C0D /* endgame.h */; };
+		19CD9AD91E51A46B00EA7C0D /* evaluate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AAA1E51A46B00EA7C0D /* evaluate.cpp */; };
+		19CD9ADA1E51A46B00EA7C0D /* evaluate.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AAB1E51A46B00EA7C0D /* evaluate.h */; };
+		19CD9ADB1E51A46B00EA7C0D /* iosextension.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AAC1E51A46B00EA7C0D /* iosextension.h */; };
+		19CD9ADC1E51A46B00EA7C0D /* iosextension.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AAD1E51A46B00EA7C0D /* iosextension.mm */; };
+		19CD9ADD1E51A46B00EA7C0D /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AAE1E51A46B00EA7C0D /* material.cpp */; };
+		19CD9ADE1E51A46B00EA7C0D /* material.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AAF1E51A46B00EA7C0D /* material.h */; };
+		19CD9ADF1E51A46B00EA7C0D /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AB01E51A46B00EA7C0D /* misc.cpp */; };
+		19CD9AE01E51A46B00EA7C0D /* misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AB11E51A46B00EA7C0D /* misc.h */; };
+		19CD9AE11E51A46B00EA7C0D /* movegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AB21E51A46B00EA7C0D /* movegen.cpp */; };
+		19CD9AE21E51A46B00EA7C0D /* movegen.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AB31E51A46B00EA7C0D /* movegen.h */; };
+		19CD9AE31E51A46B00EA7C0D /* movepick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AB41E51A46B00EA7C0D /* movepick.cpp */; };
+		19CD9AE41E51A46B00EA7C0D /* movepick.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AB51E51A46B00EA7C0D /* movepick.h */; };
+		19CD9AE51E51A46B00EA7C0D /* notation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AB61E51A46B00EA7C0D /* notation.cpp */; };
+		19CD9AE61E51A46B00EA7C0D /* notation.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AB71E51A46B00EA7C0D /* notation.h */; };
+		19CD9AE71E51A46B00EA7C0D /* pawns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AB81E51A46B00EA7C0D /* pawns.cpp */; };
+		19CD9AE81E51A46B00EA7C0D /* pawns.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AB91E51A46B00EA7C0D /* pawns.h */; };
+		19CD9AE91E51A46B00EA7C0D /* position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9ABA1E51A46B00EA7C0D /* position.cpp */; };
+		19CD9AEA1E51A46B00EA7C0D /* position.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9ABB1E51A46B00EA7C0D /* position.h */; };
+		19CD9AEB1E51A46B00EA7C0D /* psqt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9ABC1E51A46B00EA7C0D /* psqt.cpp */; };
+		19CD9AEC1E51A46B00EA7C0D /* search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9ABD1E51A46B00EA7C0D /* search.cpp */; };
+		19CD9AED1E51A46B00EA7C0D /* search.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9ABE1E51A46B00EA7C0D /* search.h */; };
+		19CD9AEE1E51A46B00EA7C0D /* tbprobe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AC01E51A46B00EA7C0D /* tbprobe.cpp */; };
+		19CD9AEF1E51A46B00EA7C0D /* tbprobe.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AC11E51A46B00EA7C0D /* tbprobe.h */; };
+		19CD9AF01E51A46B00EA7C0D /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AC21E51A46B00EA7C0D /* thread.cpp */; };
+		19CD9AF11E51A46B00EA7C0D /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AC31E51A46B00EA7C0D /* thread.h */; };
+		19CD9AF21E51A46B00EA7C0D /* thread_win32.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AC41E51A46B00EA7C0D /* thread_win32.h */; };
+		19CD9AF31E51A46B00EA7C0D /* timeman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AC51E51A46B00EA7C0D /* timeman.cpp */; };
+		19CD9AF41E51A46B00EA7C0D /* timeman.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AC61E51A46B00EA7C0D /* timeman.h */; };
+		19CD9AF51E51A46B00EA7C0D /* tt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AC71E51A46B00EA7C0D /* tt.cpp */; };
+		19CD9AF61E51A46B00EA7C0D /* tt.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AC81E51A46B00EA7C0D /* tt.h */; };
+		19CD9AF71E51A46B00EA7C0D /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9AC91E51A46B00EA7C0D /* types.h */; };
+		19CD9AF81E51A46B00EA7C0D /* uci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9ACA1E51A46B00EA7C0D /* uci.cpp */; };
+		19CD9AF91E51A46B00EA7C0D /* uci.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9ACB1E51A46B00EA7C0D /* uci.h */; };
+		19CD9AFA1E51A46B00EA7C0D /* ucioption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9ACC1E51A46B00EA7C0D /* ucioption.cpp */; };
+		19CD9AFB1E51A46B00EA7C0D /* EngineController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9ACD1E51A46B00EA7C0D /* EngineController.h */; };
+		19CD9AFC1E51A46B00EA7C0D /* EngineController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9ACE1E51A46B00EA7C0D /* EngineController.mm */; };
+		19CD9AFD1E51A46B00EA7C0D /* EngineManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD9ACF1E51A46B00EA7C0D /* EngineManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19CD9AFE1E51A46B00EA7C0D /* EngineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9AD01E51A46B00EA7C0D /* EngineManager.m */; };
+		19CD9B061E51C47A00EA7C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9B051E51C47900EA7C0D /* AppDelegate.swift */; };
+		19CD9B081E51C47A00EA7C0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CD9B071E51C47A00EA7C0D /* ViewController.swift */; };
+		19CD9B0B1E51C47A00EA7C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CD9B091E51C47A00EA7C0D /* Main.storyboard */; };
+		19CD9B0D1E51C47A00EA7C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CD9B0C1E51C47A00EA7C0D /* Assets.xcassets */; };
+		19CD9B101E51C47A00EA7C0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CD9B0E1E51C47A00EA7C0D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19CD9A871E51A2D100EA7C0D /* ChessEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChessEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CD9A8A1E51A2D200EA7C0D /* ChessEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChessEngine.h; sourceTree = "<group>"; };
 		19CD9A8B1E51A2D200EA7C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19CD9AA11E51A46B00EA7C0D /* CommandQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandQueue.h; sourceTree = "<group>"; };
+		19CD9AA21E51A46B00EA7C0D /* CommandQueue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CommandQueue.mm; sourceTree = "<group>"; };
+		19CD9AA41E51A46B00EA7C0D /* benchmark.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = benchmark.cpp; sourceTree = "<group>"; };
+		19CD9AA51E51A46B00EA7C0D /* bitbase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bitbase.cpp; sourceTree = "<group>"; };
+		19CD9AA61E51A46B00EA7C0D /* bitboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bitboard.cpp; sourceTree = "<group>"; };
+		19CD9AA71E51A46B00EA7C0D /* bitboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitboard.h; sourceTree = "<group>"; };
+		19CD9AA81E51A46B00EA7C0D /* endgame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = endgame.cpp; sourceTree = "<group>"; };
+		19CD9AA91E51A46B00EA7C0D /* endgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endgame.h; sourceTree = "<group>"; };
+		19CD9AAA1E51A46B00EA7C0D /* evaluate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = evaluate.cpp; sourceTree = "<group>"; };
+		19CD9AAB1E51A46B00EA7C0D /* evaluate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evaluate.h; sourceTree = "<group>"; };
+		19CD9AAC1E51A46B00EA7C0D /* iosextension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iosextension.h; sourceTree = "<group>"; };
+		19CD9AAD1E51A46B00EA7C0D /* iosextension.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iosextension.mm; sourceTree = "<group>"; };
+		19CD9AAE1E51A46B00EA7C0D /* material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = material.cpp; sourceTree = "<group>"; };
+		19CD9AAF1E51A46B00EA7C0D /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		19CD9AB01E51A46B00EA7C0D /* misc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = misc.cpp; sourceTree = "<group>"; };
+		19CD9AB11E51A46B00EA7C0D /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		19CD9AB21E51A46B00EA7C0D /* movegen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = movegen.cpp; sourceTree = "<group>"; };
+		19CD9AB31E51A46B00EA7C0D /* movegen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movegen.h; sourceTree = "<group>"; };
+		19CD9AB41E51A46B00EA7C0D /* movepick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = movepick.cpp; sourceTree = "<group>"; };
+		19CD9AB51E51A46B00EA7C0D /* movepick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movepick.h; sourceTree = "<group>"; };
+		19CD9AB61E51A46B00EA7C0D /* notation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = notation.cpp; sourceTree = "<group>"; };
+		19CD9AB71E51A46B00EA7C0D /* notation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notation.h; sourceTree = "<group>"; };
+		19CD9AB81E51A46B00EA7C0D /* pawns.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pawns.cpp; sourceTree = "<group>"; };
+		19CD9AB91E51A46B00EA7C0D /* pawns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pawns.h; sourceTree = "<group>"; };
+		19CD9ABA1E51A46B00EA7C0D /* position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = position.cpp; sourceTree = "<group>"; };
+		19CD9ABB1E51A46B00EA7C0D /* position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = position.h; sourceTree = "<group>"; };
+		19CD9ABC1E51A46B00EA7C0D /* psqt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = psqt.cpp; sourceTree = "<group>"; };
+		19CD9ABD1E51A46B00EA7C0D /* search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = search.cpp; sourceTree = "<group>"; };
+		19CD9ABE1E51A46B00EA7C0D /* search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = search.h; sourceTree = "<group>"; };
+		19CD9AC01E51A46B00EA7C0D /* tbprobe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tbprobe.cpp; sourceTree = "<group>"; };
+		19CD9AC11E51A46B00EA7C0D /* tbprobe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbprobe.h; sourceTree = "<group>"; };
+		19CD9AC21E51A46B00EA7C0D /* thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = thread.cpp; sourceTree = "<group>"; };
+		19CD9AC31E51A46B00EA7C0D /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		19CD9AC41E51A46B00EA7C0D /* thread_win32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_win32.h; sourceTree = "<group>"; };
+		19CD9AC51E51A46B00EA7C0D /* timeman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeman.cpp; sourceTree = "<group>"; };
+		19CD9AC61E51A46B00EA7C0D /* timeman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeman.h; sourceTree = "<group>"; };
+		19CD9AC71E51A46B00EA7C0D /* tt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tt.cpp; sourceTree = "<group>"; };
+		19CD9AC81E51A46B00EA7C0D /* tt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tt.h; sourceTree = "<group>"; };
+		19CD9AC91E51A46B00EA7C0D /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		19CD9ACA1E51A46B00EA7C0D /* uci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uci.cpp; sourceTree = "<group>"; };
+		19CD9ACB1E51A46B00EA7C0D /* uci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uci.h; sourceTree = "<group>"; };
+		19CD9ACC1E51A46B00EA7C0D /* ucioption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ucioption.cpp; sourceTree = "<group>"; };
+		19CD9ACD1E51A46B00EA7C0D /* EngineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineController.h; sourceTree = "<group>"; };
+		19CD9ACE1E51A46B00EA7C0D /* EngineController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EngineController.mm; sourceTree = "<group>"; };
+		19CD9ACF1E51A46B00EA7C0D /* EngineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineManager.h; sourceTree = "<group>"; };
+		19CD9AD01E51A46B00EA7C0D /* EngineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EngineManager.m; sourceTree = "<group>"; };
+		19CD9B031E51C47900EA7C0D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19CD9B051E51C47900EA7C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19CD9B071E51C47A00EA7C0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19CD9B0A1E51C47A00EA7C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19CD9B0C1E51C47A00EA7C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19CD9B0F1E51C47A00EA7C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19CD9B111E51C47A00EA7C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		19CD9A831E51A2D100EA7C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19CD9B001E51C47900EA7C0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,6 +141,7 @@
 		19CD9A7D1E51A2D100EA7C0D = {
 			isa = PBXGroup;
 			children = (
+				19CD9B041E51C47900EA7C0D /* Example */,
 				19CD9A891E51A2D100EA7C0D /* ChessEngine */,
 				19CD9A881E51A2D100EA7C0D /* Products */,
 			);
@@ -39,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				19CD9A871E51A2D100EA7C0D /* ChessEngine.framework */,
+				19CD9B031E51C47900EA7C0D /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,9 +160,84 @@
 			isa = PBXGroup;
 			children = (
 				19CD9A8A1E51A2D200EA7C0D /* ChessEngine.h */,
+				19CD9ACF1E51A46B00EA7C0D /* EngineManager.h */,
+				19CD9AD01E51A46B00EA7C0D /* EngineManager.m */,
+				19CD9ACD1E51A46B00EA7C0D /* EngineController.h */,
+				19CD9ACE1E51A46B00EA7C0D /* EngineController.mm */,
+				19CD9AA11E51A46B00EA7C0D /* CommandQueue.h */,
+				19CD9AA21E51A46B00EA7C0D /* CommandQueue.mm */,
+				19CD9AA31E51A46B00EA7C0D /* Engine */,
 				19CD9A8B1E51A2D200EA7C0D /* Info.plist */,
 			);
 			path = ChessEngine;
+			sourceTree = "<group>";
+		};
+		19CD9AA31E51A46B00EA7C0D /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				19CD9AAC1E51A46B00EA7C0D /* iosextension.h */,
+				19CD9AAD1E51A46B00EA7C0D /* iosextension.mm */,
+				19CD9AA41E51A46B00EA7C0D /* benchmark.cpp */,
+				19CD9AA51E51A46B00EA7C0D /* bitbase.cpp */,
+				19CD9AA61E51A46B00EA7C0D /* bitboard.cpp */,
+				19CD9AA71E51A46B00EA7C0D /* bitboard.h */,
+				19CD9AA81E51A46B00EA7C0D /* endgame.cpp */,
+				19CD9AA91E51A46B00EA7C0D /* endgame.h */,
+				19CD9AAA1E51A46B00EA7C0D /* evaluate.cpp */,
+				19CD9AAB1E51A46B00EA7C0D /* evaluate.h */,
+				19CD9AAE1E51A46B00EA7C0D /* material.cpp */,
+				19CD9AAF1E51A46B00EA7C0D /* material.h */,
+				19CD9AB01E51A46B00EA7C0D /* misc.cpp */,
+				19CD9AB11E51A46B00EA7C0D /* misc.h */,
+				19CD9AB21E51A46B00EA7C0D /* movegen.cpp */,
+				19CD9AB31E51A46B00EA7C0D /* movegen.h */,
+				19CD9AB41E51A46B00EA7C0D /* movepick.cpp */,
+				19CD9AB51E51A46B00EA7C0D /* movepick.h */,
+				19CD9AB61E51A46B00EA7C0D /* notation.cpp */,
+				19CD9AB71E51A46B00EA7C0D /* notation.h */,
+				19CD9AB81E51A46B00EA7C0D /* pawns.cpp */,
+				19CD9AB91E51A46B00EA7C0D /* pawns.h */,
+				19CD9ABA1E51A46B00EA7C0D /* position.cpp */,
+				19CD9ABB1E51A46B00EA7C0D /* position.h */,
+				19CD9ABC1E51A46B00EA7C0D /* psqt.cpp */,
+				19CD9ABD1E51A46B00EA7C0D /* search.cpp */,
+				19CD9ABE1E51A46B00EA7C0D /* search.h */,
+				19CD9ABF1E51A46B00EA7C0D /* syzygy */,
+				19CD9AC21E51A46B00EA7C0D /* thread.cpp */,
+				19CD9AC31E51A46B00EA7C0D /* thread.h */,
+				19CD9AC41E51A46B00EA7C0D /* thread_win32.h */,
+				19CD9AC51E51A46B00EA7C0D /* timeman.cpp */,
+				19CD9AC61E51A46B00EA7C0D /* timeman.h */,
+				19CD9AC71E51A46B00EA7C0D /* tt.cpp */,
+				19CD9AC81E51A46B00EA7C0D /* tt.h */,
+				19CD9AC91E51A46B00EA7C0D /* types.h */,
+				19CD9ACA1E51A46B00EA7C0D /* uci.cpp */,
+				19CD9ACB1E51A46B00EA7C0D /* uci.h */,
+				19CD9ACC1E51A46B00EA7C0D /* ucioption.cpp */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		19CD9ABF1E51A46B00EA7C0D /* syzygy */ = {
+			isa = PBXGroup;
+			children = (
+				19CD9AC01E51A46B00EA7C0D /* tbprobe.cpp */,
+				19CD9AC11E51A46B00EA7C0D /* tbprobe.h */,
+			);
+			path = syzygy;
+			sourceTree = "<group>";
+		};
+		19CD9B041E51C47900EA7C0D /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				19CD9B051E51C47900EA7C0D /* AppDelegate.swift */,
+				19CD9B071E51C47A00EA7C0D /* ViewController.swift */,
+				19CD9B091E51C47A00EA7C0D /* Main.storyboard */,
+				19CD9B0C1E51C47A00EA7C0D /* Assets.xcassets */,
+				19CD9B0E1E51C47A00EA7C0D /* LaunchScreen.storyboard */,
+				19CD9B111E51C47A00EA7C0D /* Info.plist */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +247,29 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CD9AE01E51A46B00EA7C0D /* misc.h in Headers */,
+				19CD9AFD1E51A46B00EA7C0D /* EngineManager.h in Headers */,
+				19CD9AF61E51A46B00EA7C0D /* tt.h in Headers */,
+				19CD9ADA1E51A46B00EA7C0D /* evaluate.h in Headers */,
+				19CD9AE21E51A46B00EA7C0D /* movegen.h in Headers */,
+				19CD9AD81E51A46B00EA7C0D /* endgame.h in Headers */,
+				19CD9AEA1E51A46B00EA7C0D /* position.h in Headers */,
+				19CD9AFB1E51A46B00EA7C0D /* EngineController.h in Headers */,
+				19CD9AD61E51A46B00EA7C0D /* bitboard.h in Headers */,
+				19CD9AF21E51A46B00EA7C0D /* thread_win32.h in Headers */,
+				19CD9AF11E51A46B00EA7C0D /* thread.h in Headers */,
+				19CD9AF91E51A46B00EA7C0D /* uci.h in Headers */,
+				19CD9AF41E51A46B00EA7C0D /* timeman.h in Headers */,
+				19CD9ADE1E51A46B00EA7C0D /* material.h in Headers */,
+				19CD9AE81E51A46B00EA7C0D /* pawns.h in Headers */,
+				19CD9AE61E51A46B00EA7C0D /* notation.h in Headers */,
+				19CD9AE41E51A46B00EA7C0D /* movepick.h in Headers */,
+				19CD9AD11E51A46B00EA7C0D /* CommandQueue.h in Headers */,
+				19CD9ADB1E51A46B00EA7C0D /* iosextension.h in Headers */,
+				19CD9AED1E51A46B00EA7C0D /* search.h in Headers */,
 				19CD9A8C1E51A2D200EA7C0D /* ChessEngine.h in Headers */,
+				19CD9AF71E51A46B00EA7C0D /* types.h in Headers */,
+				19CD9AEF1E51A46B00EA7C0D /* tbprobe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,18 +294,39 @@
 			productReference = 19CD9A871E51A2D100EA7C0D /* ChessEngine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		19CD9B021E51C47900EA7C0D /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19CD9B121E51C47A00EA7C0D /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				19CD9AFF1E51C47900EA7C0D /* Sources */,
+				19CD9B001E51C47900EA7C0D /* Frameworks */,
+				19CD9B011E51C47900EA7C0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 19CD9B031E51C47900EA7C0D /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		19CD9A7E1E51A2D100EA7C0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = hengyu;
 				TargetAttributes = {
 					19CD9A861E51A2D100EA7C0D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = B7E287RD53;
+						ProvisioningStyle = Manual;
+					};
+					19CD9B021E51C47900EA7C0D = {
+						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -106,12 +337,14 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 19CD9A7D1E51A2D100EA7C0D;
 			productRefGroup = 19CD9A881E51A2D100EA7C0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				19CD9B021E51C47900EA7C0D /* Example */,
 				19CD9A861E51A2D100EA7C0D /* ChessEngine */,
 			);
 		};
@@ -125,6 +358,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19CD9B011E51C47900EA7C0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CD9B101E51C47A00EA7C0D /* LaunchScreen.storyboard in Resources */,
+				19CD9B0D1E51C47A00EA7C0D /* Assets.xcassets in Resources */,
+				19CD9B0B1E51C47A00EA7C0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -132,10 +375,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CD9AD91E51A46B00EA7C0D /* evaluate.cpp in Sources */,
+				19CD9AF01E51A46B00EA7C0D /* thread.cpp in Sources */,
+				19CD9AEC1E51A46B00EA7C0D /* search.cpp in Sources */,
+				19CD9AF81E51A46B00EA7C0D /* uci.cpp in Sources */,
+				19CD9AD71E51A46B00EA7C0D /* endgame.cpp in Sources */,
+				19CD9ADF1E51A46B00EA7C0D /* misc.cpp in Sources */,
+				19CD9AE11E51A46B00EA7C0D /* movegen.cpp in Sources */,
+				19CD9AE91E51A46B00EA7C0D /* position.cpp in Sources */,
+				19CD9AFA1E51A46B00EA7C0D /* ucioption.cpp in Sources */,
+				19CD9AF31E51A46B00EA7C0D /* timeman.cpp in Sources */,
+				19CD9AD51E51A46B00EA7C0D /* bitboard.cpp in Sources */,
+				19CD9AFE1E51A46B00EA7C0D /* EngineManager.m in Sources */,
+				19CD9AE51E51A46B00EA7C0D /* notation.cpp in Sources */,
+				19CD9AEE1E51A46B00EA7C0D /* tbprobe.cpp in Sources */,
+				19CD9AE71E51A46B00EA7C0D /* pawns.cpp in Sources */,
+				19CD9AEB1E51A46B00EA7C0D /* psqt.cpp in Sources */,
+				19CD9AFC1E51A46B00EA7C0D /* EngineController.mm in Sources */,
+				19CD9AD41E51A46B00EA7C0D /* bitbase.cpp in Sources */,
+				19CD9ADD1E51A46B00EA7C0D /* material.cpp in Sources */,
+				19CD9AF51E51A46B00EA7C0D /* tt.cpp in Sources */,
+				19CD9AD21E51A46B00EA7C0D /* CommandQueue.mm in Sources */,
+				19CD9AE31E51A46B00EA7C0D /* movepick.cpp in Sources */,
+				19CD9AD31E51A46B00EA7C0D /* benchmark.cpp in Sources */,
+				19CD9ADC1E51A46B00EA7C0D /* iosextension.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19CD9AFF1E51C47900EA7C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CD9B081E51C47A00EA7C0D /* ViewController.swift in Sources */,
+				19CD9B061E51C47A00EA7C0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19CD9B091E51C47A00EA7C0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19CD9B0A1E51C47A00EA7C0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19CD9B0E1E51C47A00EA7C0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19CD9B0F1E51C47A00EA7C0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		19CD9A8D1E51A2D200EA7C0D /* Debug */ = {
@@ -237,14 +532,16 @@
 		19CD9A901E51A2D200EA7C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = B7E287RD53;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ChessEngine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hengyu.ChessEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -255,18 +552,51 @@
 		19CD9A911E51A2D200EA7C0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = B7E287RD53;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ChessEngine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hengyu.ChessEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		19CD9B131E51C47A00EA7C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hengyu.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		19CD9B141E51C47A00EA7C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hengyu.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -289,6 +619,16 @@
 				19CD9A911E51A2D200EA7C0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19CD9B121E51C47A00EA7C0D /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CD9B131E51C47A00EA7C0D /* Debug */,
+				19CD9B141E51C47A00EA7C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
