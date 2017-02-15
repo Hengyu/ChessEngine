@@ -5,27 +5,29 @@
 # Usage
 
 ## Installation
-You have multiple choices to make use of `ChessEngine` framework:
+
+You have multiple choices to make use of `ChessEngine` framework.
 - Copy `/ChessEngine/ChessEngine` to your project.
 - Drag-n-drop _ChessEngine_ project to your project.
 Carthage installation will be supported in the future.
+
 ## Quick start
 
 Just a few lines of code:
 
 ```swift
-`import ChessEngine
+import ChessEngine
 // ..some code..
 let engineManager: EngineManager = EngineManager()
 engineManager.delegate = self
 engineManager.gameFen = someGameFen
 engineManager.startAnalyzing()
 ```
-`
+
 ## Delegate
 
 ```swift
-`required public func engineManager(_ engineManager: EngineManager, didReceiveBestMove bestMove: String?, ponderMove: String?)
+required public func engineManager(_ engineManager: EngineManager, didReceiveBestMove bestMove: String?, ponderMove: String?)
  
 optional public func engineManager(_ engineManager: EngineManager, didAnalyzeCurrentMove currentMove: String, number: Int, depth: Int)
 
@@ -33,11 +35,13 @@ optional public func engineManager(_ engineManager: EngineManager, didReceivePr
 
 optional public func engineManager(_ engineManager: EngineManager, didUpdateSearchingStatus searchingStatus: String)
 ```
-`
+
 # Related
 
 ChessEngine framework is **inspired** by the open sourced project [Stockfish for iOS][2]. I found this project has not been updated for a long time and it’s internal engine is `stockfish 6`, while the latest version of `stockfish` is 8. So I decided to create an iOS framework that uses `stockfish 8`. 
+
 **Thanks.**
+
 Stockfish for macOS can be found here [stockfish-mac][3].
 
 # Contribution
