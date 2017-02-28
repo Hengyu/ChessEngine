@@ -38,15 +38,15 @@ optional public func engineManager(_ engineManager: EngineManager, didUpdateSea
 
 # Related
 
-ChessEngine framework is **inspired** by the open sourced project [Stockfish for iOS][2]. I found this project has not been updated for a long time and it’s internal engine is `stockfish 6`, while the latest version of `stockfish` is 8. So I decided to create an iOS framework that uses `stockfish 8`. 
+ChessEngine framework is **inspired** by the open sourced project [Stockfish for iOS][2], it’s source code can be downloaded from [here][3]. I found this project has not been updated for a long time and it’s internal engine is `stockfish 6`, while the latest version is `stockfish 8`. So I decided to create an iOS framework that uses `stockfish 8`. 
 
 **Thanks.**
 
-Stockfish for macOS can be found here [stockfish-mac][3].
+Stockfish for macOS can be found here [stockfish-mac][4].
 
 # Contribution
 
-Pull requests and issues are welcomed.  If the pull requests are related to [Stockfish][4] engine, please go to it’s page and make pull requests.
+Pull requests and issues are welcomed.  If the pull requests are related to [Stockfish][5] engine, please go to it’s page and make pull requests.
 
 # License
 
@@ -57,5 +57,6 @@ You can go to `license` file to see the full version.
 
 [1]:	https://stockfishchess.org
 [2]:	https://itunes.apple.com/us/app/stockfish-chess/id305558605?mt=8
-[3]:	https://github.com/daylen/stockfish-mac
-[4]:	https://stockfishchess.org
+[3]:	https://stockfish.s3.amazonaws.com/stockfish-2.13-ios-src.zip
+[4]:	https://github.com/daylen/stockfish-mac
+[5]:	https://stockfishchess.org
